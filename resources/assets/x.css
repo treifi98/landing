@@ -1,0 +1,3 @@
+.swiper-slide.no-swiping {
+    pointer-events: none;
+  }
