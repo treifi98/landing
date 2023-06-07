@@ -8,7 +8,7 @@ const NewElement = () => {
         <div className='w-[91.25rem] h-[38.125rem] border-[#CAD4D5] border-[0.0625rem] rounded-[0.981875rem] shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] flex justify-center items-center'>
             <div className='w-[86.37rem] h-[34.69rem] flex gap-[4.125rem]'>
                 <div className='w-[29.75rem] h-[34.69rem] border-[#DCE3E3] border-[0.0625rem] shadow-[inset_-0.43430625rem_-0.542883125rem_0.814325rem_#FFFFFF,inset_0.43430625rem_0.43430625rem_0.814325rem_#B6C3C5] rounded-[0.779375rem]'>
-                    <div className='text-[1.7375rem] text-grade w-[25.08125rem] h-[11rem] leading-[2.77625rem] ml-[1.194375rem] mt-[1.303125rem]'>
+                    <div className='text-[1.7375rem] text-grade1 w-[25.08125rem] h-[11rem] leading-[2.77625rem] ml-[1.194375rem] mt-[1.303125rem]'>
                         Society HOUSE DOWNTOWN WAS DESiGNED WITH BOTH AESTHETICS AND FUNCTIONALITY IN MIND.
                     </div>
                     <div className='text-grade text-[1.085625rem] leading-[1.7375rem] w-[26.6875rem] ml-[1.194375rem] mt-[1.8875rem]'>

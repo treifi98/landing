@@ -25,7 +25,9 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
+        "@inertiajs/inertia-react": "^0.8.1",
         "mapbox-gl": "^2.15.0",
+        "react-map-gl": "^7.0.25",
         "react-range": "^1.8.14",
         "swiper": "^9.3.2"
     }

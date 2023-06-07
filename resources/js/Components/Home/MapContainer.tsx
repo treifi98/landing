@@ -19,7 +19,7 @@ const MapContainer = () => {
 
     const [changes,setChanges] = useState(-1)
     const [rchanges,setRChanges] = useState(-1)
-    const [zoom,setZoom] = useState(-14)
+    const [zoom,setZoom] = useState(14)
 
     const [points,setPoints] = useState([
         {

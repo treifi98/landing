@@ -23,6 +23,7 @@ import userIcon from '../../assets/user_icon.svg'
 import socity from '../../assets/socity.svg'
 import paymentPlanLogo from '../../assets/payment_plan_icon.svg'
 import completion from '../../assets/compleationIcon.svg'
+import SliderButton from './Home/SliderButton'
 const ProjectInfo = () => {
   return (
     <div className=' w-[91.25rem] h-[38.125rem] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] rounded-[0.98125rem] overflow-hidden'>
@@ -42,13 +43,22 @@ const ProjectInfo = () => {
             <div className='ml-[1.25rem]' style={{ width:'8.75rem',height:'2rem' }}>
                 <NewTag text='Fully FURNISHED' textSize='1.125rem' textWeight='400'/>
             </div>
+            <div className='ml-auto flex mr-[2.4375rem]'>
+
+                <div className='ml-auto mr-[1.5625rem]'>
+                    <SliderButton title='Price By' options={['AED','USD','EUR']}/>
+                </div>
+                <div className='ml-auto x'>
+                    <SliderButton title='Size By' options={['SQ','USD','EUR']}/>
+                </div>
+            </div>
         </div>
         <div className='w-[86.0625rem] flex justify-center mx-auto'>
             <div className='w-[48.3125rem] h-[34.71875rem] mt-[0.725rem]'>
                 <div className='text-grade1 text-[1.875rem] font-[600]'>
                     SOCIETY HOUSE
                 </div>
-                <div className='w-[26.875rem] mt-[0.7rem] text-grade text-[1.25rem] leading-[1.60375rem] font-[600]'>
+                <div className='w-[26.875rem] mt-[0.7rem] text-grade1 text-[1.25rem] leading-[1.60375rem] font-[600]'>
                     Where Culture, Business, and Iconic Landmarks
                     Collide in Electrifying Harmony
                 </div>
@@ -374,7 +384,7 @@ const ProjectInfo = () => {
             <div className='w-[31.3125rem] ml-[2.9375rem] shadow-[inset_-0.3125rem_-0.3125rem_0.5rem_#FFFFFF,inset_0.3125rem_0.3125rem_0.4375rem_#B6C3C5] h-[29.5625rem] rounded-[0.9375rem] mt-[2.75rem] flex flex-col items-center justify-center '>
                 <div className='w-[28.88625rem] h-[27.18125rem] shadow-[-0.250746875rem_-0.250746875rem_0.401195rem_#FFFFFF,0.250746875rem_0.250746875rem_0.351045625rem_#B6C3C5] rounded-[0.75rem] flex justify-center items-center'>
                     <div className='w-[27.18125rem] h-[26.42rem] flex flex-col items-center'>
-                        <div className='text-grade text-[1.739375rem] leading-[2.11875rem] font-[600] text-center'>
+                        <div className='text-grade1 text-[1.739375rem] leading-[2.11875rem] font-[600] text-center'>
                             SECURE YOUR PLACE FOR THE LIMITED-TIME OFFER
                         </div>
                         <div className='mt-[1.403125rem]'>

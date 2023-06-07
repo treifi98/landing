@@ -30,12 +30,22 @@ const LogoTextLR = () => {
 
 
                 <div className='w-[46.0625rem]'>
-                    <div className='font-[600] text-grade text-[2rem]'>
-                        Latest Projects By Emaar
+                    <div className='font-[400] text-grade1 text-[1.625rem] leading-[2.4rem]'>
+                        EVERY FEATURE CONSIDERED. EVERY CURAELEMENTTED DOWNTOWN LIVING ISN’T JUST ABOUT BEING CONNECTED OR HAVING THE BEST OF EVERYTHING.
                     </div>
-                    <div className='text-[1.25rem] leading-[2rem] text-grade mt-[1.25rem]'>
-                        One of the company’s main objectives to be achieved during construction is environmental sustainability. Emaar’s projects and activities support the UAE’s ‘green vision’ to improve the world’s ecological system. Furthermore, in 2015, the company launched the Emaar Foundation, which aims to implement corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future Africa Foundation to ensure opportunity and equality for those most in need in Africa and thealso supports the Dream for Future Africa Foundation to ensure opportunity
-                        corporate social responsibility (CSR) initiatives. This program supports Dubai Cares, which aims to improve access to quality primary education for children in developing countries. The Foundation also supports the Dream for Future
+                    <div className='text-[1.25rem]  mt-[1.25rem] leading-[2rem] '>
+                        <p className='text-grade w-[44.75rem]'>
+                            Which is why, we’ve carefully integrated four vertical gardens into the structure of Society House, bringing calm and balance <br/> where it’s needed most.
+
+                        </p>
+                        <p className='mt-[2rem] text-grade w-[44.75rem]'>
+                            The vertical gardens are not only beautiful, but add a unique layer to modern living, creating an oasis of green in the least likely place. Curved lines and vast volume contribute to the space’s unique design, enhancing the facade and the seamlessly never-ending views.
+                        </p>
+                        <div className='mt-[2.5rem] h-[3.196875rem] w-[31.25rem] rounded-[6.25rem] bg-custom-gradient shadow-[0rem_0.309226875rem_0.309226875rem_rgba(0,0,0,0.25)] hover:shadow-[inset_0rem_0.309226875rem_0.309226875rem_rgba(0,0,0,0.25)] cursor-pointer flex justify-center items-center mx-auto'>
+                            <div className='!text-[#fff] text-[1.739375rem] font-[600]'>
+                                Obtain Access to the Special Offer
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
