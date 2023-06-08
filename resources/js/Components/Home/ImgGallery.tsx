@@ -41,12 +41,19 @@ const ImgGallery = () => {
     }
     const gallery = useRef(null)
   return (
-        <div className='lg:w-[95.625rem] lg:h-[41.1875rem] md:w-[95%] border-[#CAD4D5] border-[0.0625rem]  shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] flex flex-col items-center mt-[0rem] overflow-hidden md:mx-auto'>
-            <div className='lg:w-[91.74125rem] lg:h-[34.468125rem] flex lg:flex-row md:justify-between items-center mt-[1.6875rem]  md:w-[100%] md:flex-col md:mx-auto '>
-            <div className='flex justify-center items-center lg:w-[56.798125rem] md:w-[80%] h-[33.1875rem] border-[#DCE3E3] border-[0.0625rem] rounded-[0.84375rem] shadow-[inset_-0.2805075rem_-0.2805075rem_0.448811875rem_#FFFFFF,inset_0.2805075rem_0.2805075rem_0.39271rem_#B6C3C5]'>
-                <div className='lg:w-[54.8125rem] md:w-[95%] md:h-[95%] lg:h-[31.3125rem] rounded-[0.84375rem] relative'>
-                    <NewCardImage src={landingHero} rounded='0.84375'/>
-                    <div className='absolute top-[1.5rem] lg:left-[1.84375rem] w-[20.875rem] h-[28.4375rem] flex flex-col items-center gap-[2.1875rem]  left-[calc(50%-10.4375rem)]'>
+        <div className='lg:w-[95.625rem] lg:h-[41.1875rem] h-max  pb-[1rem] lg:pb-0 w-[80vw] border-[#CAD4D5] border-[0.0625rem]  shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] flex flex-col items-center mt-[0rem] overflow-hidden mx-auto'>
+            <div className='lg:w-[91.74125rem] lg:h-[34.468125rem] h-max flex lg:flex-row justify-between items-center mt-[1.6875rem]  w-[100%] flex-col mx-auto '>
+            <div className='flex justify-center items-center lg:w-[56.798125rem] w-[95%] h-max lg:h-[33.1875rem] lg:py-0 py-[0.5rem] border-[#DCE3E3] border-[0.0625rem] rounded-[0.84375rem] shadow-[inset_-0.2805075rem_-0.2805075rem_0.448811875rem_#FFFFFF,inset_0.2805075rem_0.2805075rem_0.39271rem_#B6C3C5]'>
+                <div className='lg:w-[54.8125rem] w-[95%] h-max lg:h-[31.3125rem] rounded-[0.84375rem] relative '>
+                    <div className='lg:block hidden'>
+
+                        <NewCardImage src={landingHero} rounded='0.84375'/>
+                    </div>
+                    <div className=' lg:hidden w-[100%] h-full rounded-[0.84375rem] flex relative md:absolute'>
+                        <img src={landingHero} alt="" className='w-[100%] rounded-[0.84375rem]'/>
+                        <div className={`w-full h-full absolute top-0 left-0 bg-[#01141666] mix-blend-overlay rounded-[0.84375rem]`}></div>
+                    </div>
+                    <div className='absolute top-[1.5rem] lg:left-[1.84375rem] w-[20.875rem] h-[28.4375rem] flex-col items-center gap-[2.1875rem]  left-[calc(50%-10.4375rem)] hidden lg:flex'>
                         <div className='w-full h-[2.1875rem] birder-[#E6EDED] border-[0.0625rem] rounded-[6.25rem] flex justify-center items-center hover:bg-[#dbe9e94d] transition-all cursor-pointer'>
                             <div className='font-[600] text-[#fff] text-[1rem] '>
                                 Fully FURNISHED LUXURY APARTMENTS
@@ -83,25 +90,63 @@ const ImgGallery = () => {
                             </div>
                         </div>
                     </div>
+                    {/* replacment */}
+                    <div className='aspect-[877/510] w-[95%] relative top-0 left-0  justify-start md:items-start hidden md:flex  items-center gap-x-[10%] flex-col flex-wrap  lg:hidden mx-auto'>
+                        <div className='w-[90%] md:w-[45%] h-[2.1875rem] birder-[#E6EDED] border-[0.0625rem] rounded-[6.25rem] flex justify-center items-center hover:bg-[#dbe9e94d] transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
+                        <div className='font-[600] text-[#fff] lg:text-[1rem] text-[0.7rem] '>
+                            FURNISHED LUXURY APARTMENTS
+                        </div>
+                        </div>
+                        <div className='w-[90%] md:w-[45%] h-[2.1875rem] birder-[#E6EDED] border-[0.0625rem] rounded-[6.25rem] flex justify-center items-center hover:bg-[#dbe9e94d] transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
+                            <div className='font-[600] text-[#fff] lg:text-[1rem] text-[0.7rem] '>
+                                WALKING DISTANCE TO DUBAI MALL
+                            </div>
+                        </div>
+                        <div className='w-[90%] md:w-[45%] h-[2.1875rem] birder-[#E6EDED] border-[0.0625rem] rounded-[6.25rem] flex justify-center items-center hover:bg-[#dbe9e94d] transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
+                            <div className='font-[600] text-[#fff] lg:text-[1rem] text-[0.7rem] '>
+                                ACCESS TO PRE-LAUNCH OFFERS
+                            </div>
+                        </div>
+                        <div className='w-[90%] md:w-[45%] h-[2.1875rem] birder-[#E6EDED] border-[0.0625rem] rounded-[6.25rem] flex justify-center items-center hover:bg-[#dbe9e94d] transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
+                            <div className='font-[600] text-[#fff] lg:text-[1rem] text-[0.7rem] '>
+                                4.5 YEARS PAYMENT
+                            </div>
+                        </div>
+                        <div className='w-[90%] md:w-[45%] h-[2.1875rem] birder-[#E6EDED] border-[0.0625rem] rounded-[6.25rem] flex justify-center items-center hover:bg-[#dbe9e94d] transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
+                            <div className='font-[600] text-[#fff] lg:text-[1rem] text-[0.7rem] '>
+                                POST HANDOVER PAYMENT PLAN
+                            </div>
+                        </div>
+                        <div className='w-[90%] md:w-[45%] h-[2.1875rem] birder-[#E6EDED] border-[0.0625rem] rounded-[6.25rem] flex justify-center items-center hover:bg-[#dbe9e94d] transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
+                            <div className='font-[600] text-[#fff] lg:text-[1rem] text-[0.7rem] '>
+                                HANDOVER IN Q2 2026
+                            </div>
+                        </div>
+                        <div className='w-[90%] md:w-[45%] h-[2.1875rem] birder-[#E6EDED] border-[0.0625rem] rounded-[6.25rem] flex justify-center items-center hover:bg-[#dbe9e94d] transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
+                            <div className='font-[600] text-[#fff] lg:text-[1rem] text-[0.7rem] '>
+                                STARTING PRICE  AED 960,000 / $263,000
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div className='lg:w-[32.86625rem] h-[33.188125rem] flex flex-wrap md:w-[90%] md:mx-auto md:justify-center'>
-                <div className='lg:w-[15.920625rem] md:w-[45%] h-[16.07rem] rounded-[0.551694375rem_5.4473125rem_0.367384375rem_5.4473125rem] border-[#CAD4D5] border-[0.0625rem] shadow-[inset_-0.1424525rem_-0.1424525rem_0.284905rem_0.07122625rem_#FFFFFF,inset_0.1424525rem_0.1424525rem_0.284905rem_#BABFBF] flex justify-center items-center'>
-                    <img src={imgLT} alt="" className='w-[14.68125rem] h-[14.86625rem] rounded-[0.551694375rem_5.4473125rem_0.367384375rem_5.4473125rem]'/>
+            <div className='lg:w-[32.86625rem] lg:h-[33.188125rem] h-max flex flex-wrap w-[95%] mx-auto justify-between lg:mt-[0rem] mt-[2rem]'>
+                <div className='lg:w-[15.920625rem] w-[46%] aspect-square lg:h-[16.07rem] rounded-[3.6%_33.9%_2.4%_33.9%] border-[#CAD4D5] border-[0.0625rem] shadow-[inset_-0.1424525rem_-0.1424525rem_0.284905rem_0.07122625rem_#FFFFFF,inset_0.1424525rem_0.1424525rem_0.284905rem_#BABFBF] flex justify-center items-center group overflow-hidden'>
+                    <img src={imgLT} alt="" className='lg:w-[14.68125rem] lg:h-[14.86625rem] w-[94%]  aspect-square rounded-[3.6%_33.9%_2.4%_33.9%] group-hover:scale-[1.3] transition-all '/>
 
                 </div>
-                <div className='lg:w-[15.920625rem] md:w-[45%] h-[16.07rem] rounded-[5.4473125rem_0.551694375rem_5.4473125rem_0.367384375rem] ml-[0.985625rem] border-[#CAD4D5] border-[0.0625rem] shadow-[inset_-0.1424525rem_-0.1424525rem_0.284905rem_0.07122625rem_#FFFFFF,inset_0.1424525rem_0.1424525rem_0.284905rem_#BABFBF] flex justify-center items-center'>
-                    <img src={imgRT} alt="" className='w-[14.68125rem] h-[14.86625rem] rounded-[5.4473125rem_0.367384375rem_5.4473125rem_0.367384375rem]'/>
+                <div className='lg:w-[15.920625rem] w-[46%] lg:h-[16.07rem] aspect-[1/1] rounded-[33.9%_3.6%_33.9%_2.4%] ml-[0.985625rem] border-[#CAD4D5] border-[0.0625rem] shadow-[inset_-0.1424525rem_-0.1424525rem_0.284905rem_0.07122625rem_#FFFFFF,inset_0.1424525rem_0.1424525rem_0.284905rem_#BABFBF] flex justify-center items-center group overflow-hidden'>
+                    <img src={imgRT} alt="" className='lg:w-[14.68125rem] lg:h-[14.86625rem] w-[94%]  aspect-square rounded-[33.9%_3.6%_33.9%_2.4%] group-hover:scale-[1.3] transition-all'/>
 
                 </div>
-                <div className='w-[15.920625rem] h-[16.07rem] rounded-[5.4473125rem_0.551694375rem_5.4473125rem_0.367384375rem] mr-[0.985625rem] mt-[0.985625rem] border-[#CAD4D5] border-[0.0625rem] shadow-[inset_-0.1424525rem_-0.1424525rem_0.284905rem_0.07122625rem_#FFFFFF,inset_0.1424525rem_0.1424525rem_0.284905rem_#BABFBF] flex justify-center items-center'>
-                    <img src={imgLB} alt="" className='w-[14.68125rem] h-[14.86625rem] rounded-[5.4473125rem_0.551694375rem_5.4473125rem_0.367384375rem]'/>
+                <div className='lg:w-[15.920625rem] w-[46%] lg:h-[16.07rem] aspect-[1/1] rounded-[33.9%_3.6%_33.9%_2.4%] mr-[0.985625rem] mt-[0.985625rem] border-[#CAD4D5] border-[0.0625rem] shadow-[inset_-0.1424525rem_-0.1424525rem_0.284905rem_0.07122625rem_#FFFFFF,inset_0.1424525rem_0.1424525rem_0.284905rem_#BABFBF] flex justify-center items-center group overflow-hidden'>
+                    <img src={imgLB} alt="" className='lg:w-[14.68125rem] lg:h-[14.86625rem] w-[94%]  aspect-square rounded-[33.9%_3.6%_33.9%_2.4%] group-hover:scale-[1.3] transition-all'/>
                 </div>
-                <div className='w-[15.920625rem] h-[16.07rem] rounded-[0.551694375rem_5.4473125rem_0.367384375rem_5.4473125rem] mt-[0.985625rem] border-[#CAD4D5] border-[0.0625rem] shadow-[inset_-0.1424525rem_-0.1424525rem_0.284905rem_0.07122625rem_#FFFFFF,inset_0.1424525rem_0.1424525rem_0.284905rem_#BABFBF] flex justify-center items-center cursor-pointer' onClick={handleClick}>
-                    <div className='w-[14.68125rem] h-[14.86625rem] rounded-[0.551694375rem_5.4473125rem_0.367384375rem_5.4473125rem] relative'>
+                <div className='lg:w-[15.920625rem] w-[46%] lg:h-[16.07rem] aspect-[1/1] rounded-[3.6%_33.9%_2.4%_33.9%] mt-[0.985625rem] border-[#CAD4D5] border-[0.0625rem] shadow-[inset_-0.1424525rem_-0.1424525rem_0.284905rem_0.07122625rem_#FFFFFF,inset_0.1424525rem_0.1424525rem_0.284905rem_#BABFBF] flex justify-center items-center cursor-pointer group overflow-hidden' onClick={handleClick}>
+                    <div className='lg:w-[14.68125rem] lg:h-[14.86625rem] w-[100%] aspect-square rounded-[3.6%_33.9%_2.4%_33.9%] relative flex justify-center items-center'>
 
-                        <img src={imgRB} alt="" className='w-[14.68125rem] h-[14.86625rem] rounded-[0.551694375rem_5.4473125rem_0.367384375rem_5.4473125rem]'/>
+                        <img src={imgRB} alt="" className='lg:w-[14.68125rem] lg:h-[14.86625rem] w-[94%]  aspect-square rounded-[3.6%_33.9%_2.4%_33.9%] group-hover:scale-[1.3] transition-all'/>
                         <div className='absolute bottom-[0.576875rem] right-[0.87875rem] flex gap-[0.4375rem]'>
                             <div className='text-[#fff] text-[1.125rem] font-[600]'>
                                 12+
@@ -113,7 +158,7 @@ const ImgGallery = () => {
             </div>
 
         </div>
-        {/* <div className='lg:w-[91.74125rem] md:w-full h-[2.315625rem] justify-between mx-auto mt-[1.6875rem] flex flex-wrap'>
+        {/* <div className='lg:w-[91.74125rem] w-full h-[2.315625rem] justify-between mx-auto mt-[1.6875rem] flex flex-wrap'>
             <div className='' style={{ width:'2.315625rem',height:'2.315625rem' }}>
 
                 <NewSocial img={shareIcon} img_h='1.16375' img_w='1.16375'/>

@@ -229,7 +229,7 @@ module.exports = {
                 // 'sm': '640px',
                 // => @media (min-width: 640px) { ... }
 
-                'md': '414px',
+                'md': '700px',
                 // => @media (min-width: 768px) { ... }
 
                 'lg': '1530px',
