@@ -67,9 +67,9 @@ const MapContainer = () => {
 
 
   return (
-    <div className='w-[91.25rem] h-[38.125rem] rounded-[0.98125rem] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] overflow-hidden '>
-        <div className='w-full h-[4rem]  border-[#DCE3E3] border-[0.0625rem] shadow-[-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] '>
-            <div className='w-[89.875rem] h-full flex items-center justify-start gap-[1.5625rem] mx-auto'>
+    <div className='lg:w-[91.25rem] lg:h-[38.125rem] w-[80vw] h-max rounded-[0.98125rem] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] overflow-hidden '>
+        <div className='w-full lg:h-[4rem] h-max py-[1rem] lg:py-0  border-[#DCE3E3] border-[0.0625rem] shadow-[-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] '>
+            <div className='lg:w-[89.875rem] w-[99%] h-full flex items-center lg:justify-start justify-center gap-[1.5625rem] flex-wrap mx-auto'>
 
                 <div className='w-[11.5rem] h-[2.25rem] flex group cursor-pointer'>
                     <div className='w-[3rem] h-full rounded-[5.7075rem_0rem_0rem_5.7075rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] '>
@@ -171,8 +171,8 @@ const MapContainer = () => {
             </div>
         </div>
 
-        <div className='w-[88.3125rem] flex mx-auto h-[34.1875rem] items-center'>
-            <div className='w-[36.375rem] max-h-[30rem] h-min  flex flex-wrap gap-[2.5rem] justify-start items-start'>
+        <div className='lg:w-[88.3125rem] lg:flex mx-auto lg:h-[34.1875rem] items-center'>
+            <div className='lg:w-[36.375rem] lg:max-h-[30rem] h-min  md:flex flex-wrap gap-[2.5rem] lg:justify-start justify-center items-start mt-[1rem] lg:mt-0 hidden'>
                 <div className='w-[16.9375rem] h-[4rem] flex justify-center items-center rounded-[0.3125rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.285380625rem_-0.285380625rem_0.45660625rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] hover:shadow-[inset_-0.285380625rem_-0.285380625rem_0.45660625rem_#FFFFFF,inset_0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] cursor-pointer' onMouseEnter={()=>handleMouseEnter(0)} onMouseLeave={()=>handleMouseLeave(0)}>
                     <div className='text-grade text-[1.125rem]'>
                         Binary Tower
@@ -225,19 +225,57 @@ const MapContainer = () => {
                 </div>
 
             </div>
-            <div className='w-[1.311875rem] h-[34.1875rem] ml-[1.875rem] mr-[1.875rem]'>
+
+            <div className='lg:w-[36.375rem] lg:max-h-[30rem] h-min w-full flex flex-wrap gap-[2.5rem] lg:justify-start justify-center items-start mt-[1rem] lg:mt-0 md:hidden'>
+                <div className='text-grade text-[1.125rem] w-[40%] text-center'>
+                    Binary Tower
+                </div>
+                <div className='text-grade text-[1.125rem] w-[40%] text-center'>
+                    Binary Tower
+                </div>
+                <div className='text-grade text-[1.125rem] w-[40%] text-center'>
+                    Binary Tower
+                </div>
+                <div className='text-grade text-[1.125rem] w-[40%] text-center'>
+                    Binary Tower
+                </div>
+                <div className='text-grade text-[1.125rem] w-[40%] text-center'>
+                    Binary Tower
+                </div>
+                <div className='text-grade text-[1.125rem] w-[40%] text-center'>
+                    Binary Tower
+                </div>
+                <div className='text-grade text-[1.125rem] w-[40%] text-center'>
+                    Binary Tower
+                </div>
+                <div className='text-grade text-[1.125rem] w-[40%] text-center'>
+                    Binary Tower
+                </div>
+            </div>
+
+            <div className='w-[1.311875rem] h-[34.1875rem] ml-[1.875rem] mr-[1.875rem] hidden lg:block'>
                 <ZoomRange
                     rtl={false}
                     func={setZoom}
                 />
             </div>
-            <div className='h-[31.619375rem] w-[46.8675rem] rounded-[0.98125rem] overflow-hidden '>
+            <div className='h-[31.619375rem] w-[46.8675rem] rounded-[0.98125rem] overflow-hidden hidden lg:block'>
                 <Map
                     points={points}
                     changes={changes}
                     rchanges={rchanges}
                     zoom={zoom}
                     isZoom={false}
+                />
+
+            </div>
+            <div className='w-[95%] mx-auto mt-[1rem] mb-[1rem] aspect-square rounded-[0.98125rem] overflow-hidden block lg:hidden'>
+                <Map
+                    points={points}
+                    changes={changes}
+                    rchanges={rchanges}
+                    zoom={4}
+                    isZoom={true}
                 />
 
             </div>

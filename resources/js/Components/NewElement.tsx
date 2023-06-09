@@ -5,7 +5,7 @@ import img2 from '../../assets/img2.png'
 
 const NewElement = () => {
     return (
-        <div className='lg:w-[91.25rem] lg:h-[38.125rem] w-[70vw] h-max border-[#CAD4D5] border-[0.0625rem] rounded-[0.981875rem] shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] flex justify-center items-center '>
+        <div className='lg:w-[91.25rem] lg:h-[38.125rem] w-[80vw] h-max border-[#CAD4D5] border-[0.0625rem] rounded-[0.981875rem] shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] flex justify-center items-center '>
             <div className='lg:w-[86.37rem] lg:h-[34.69rem] w-[94.65%] h-max flex lg:gap-[4.125rem] flex-wrap lg:justify-start justify-center gap-[5rem]  lg:py-0 py-[2rem]'>
                 <div className='lg:w-[29.75rem] lg:h-[34.69rem] w-[90%] lg:pb-0 pb-[1rem] border-[#DCE3E3] border-[0.0625rem] shadow-[inset_-0.43430625rem_-0.542883125rem_0.814325rem_#FFFFFF,inset_0.43430625rem_0.43430625rem_0.814325rem_#B6C3C5] rounded-[0.779375rem] h-max md:aspect-[9673/13675]'>
                     <div className='text-[1.1375rem] lg:text-[1.7375rem] md:text-[1.9375rem] text-grade1 lg:w-[25.08125rem] w-[95%] px-[0.5rem] lg:px-0 lg:h-[11rem] h-max leading-[2.37625rem] lg:leading-[2.77625rem] md:leading-[3.17625rem] ml-[1.194375rem] mt-[1.303125rem]'>

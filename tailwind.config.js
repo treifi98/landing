@@ -228,8 +228,12 @@ module.exports = {
                 // => @media (min-width: 1280px) { ... }
                 // 'sm': '640px',
                 // => @media (min-width: 640px) { ... }
-
+                'smd': '400px',
+                'msmd': '414px',
+                'mmd1': '500px',
+                'mmd2': '600px',
                 'md': '700px',
+                'ipad': '800px',
                 // => @media (min-width: 768px) { ... }
 
                 'lg': '1530px',
@@ -237,6 +241,12 @@ module.exports = {
 
 
                 // => @media (min-width: 1536px) { ... }
+              },
+              flex: {
+                '1': '1 1 0%',  // add this line
+              },
+              content: {  // add this block
+                "": '""',
               },
               backgroundImage: {
                 'custom-gradient': 'linear-gradient(178.83deg, #002D31 1.2%, #194549 50.36%, #002326 99.19%)',
@@ -279,7 +289,18 @@ module.exports = {
                 flipBack: 'flipBack 0s ease-in-out forwards',
                 move: 'move 0.15s ease-in-out forwards',
                 moveBack: 'moveBack 0.34s ease-in-out forwards',
-              }
+              },
+              variants: {
+                extend: {
+                  display: ['before', 'after'],
+                  content: ['before', 'after'],
+                  flex: ['before', 'after'],
+                }
+              },
+            //   plugins: [
+            //     require('@tailwindcss/forms'),
+            //     require('tailwindcss-pseudo-elements'),
+            //   ],
         },
     },
 

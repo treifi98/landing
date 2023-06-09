@@ -26,39 +26,42 @@ import completion from '../../assets/compleationIcon.svg'
 import SliderButton from './Home/SliderButton'
 const ProjectInfo = () => {
   return (
-    <div className=' w-[91.25rem] h-[38.125rem] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] rounded-[0.98125rem] overflow-hidden'>
-        <div className='w-full h-[3.75rem] border-[#DCE3E3] border-[0.0625rem] shadow-[-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] flex items-center'>
-            <div className='ml-[1.5rem]' style={{ width:'8.75rem',height:'2rem' }}>
-                <NewTag text='Burj Khalifa' textSize='1.125rem' textWeight='400'/>
-            </div>
-            <div className='ml-[1.25rem]' style={{ width:'8.75rem',height:'2rem' }}>
-                <NewTag text='Downtown' textSize='1.125rem' textWeight='400'/>
-            </div>
-            <div className='ml-[1.25rem]' style={{ width:'8.75rem',height:'2rem' }}>
-                <NewTag text='HClose to canal' textSize='1.125rem' textWeight='400'/>
-            </div>
-            <div className='ml-[1.25rem]' style={{ width:'8.75rem',height:'2rem' }}>
-                <NewTag text='Close to DIFC ' textSize='1.125rem' textWeight='400'/>
-            </div>
-            <div className='ml-[1.25rem]' style={{ width:'8.75rem',height:'2rem' }}>
-                <NewTag text='Fully FURNISHED' textSize='1.125rem' textWeight='400'/>
-            </div>
-            <div className='ml-auto flex mr-[2.4375rem]'>
+    <div className=' lg:w-[91.25rem] lg:h-[38.125rem] w-[80vw] h-max border-[#CAD4D5] border-[0.0625rem] shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] rounded-[0.98125rem] overflow-hidden'>
+            <div className='w-full lg:h-[3.75rem] h-max py-[1rem] lg:py-0 border-[#DCE3E3] border-[0.0625rem] shadow-[-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] '>
+                <div className='flex flex-wrap items-center lg:gap-0 gap-[1rem] justify-center lg:w-full w-[90%] mx-auto lg:mx-0'>
 
-                <div className='ml-auto mr-[1.5625rem]'>
-                    <SliderButton title='Price By' options={['AED','USD','EUR']}/>
+                    <div className='lg:ml-[1.5rem] ' style={{ width:'8.75rem',height:'2rem' }}>
+                        <NewTag text='Burj Khalifa' textSize='1.125rem' textWeight='400'/>
+                    </div>
+                    <div className='lg:ml-[1.25rem]' style={{ width:'8.75rem',height:'2rem' }}>
+                        <NewTag text='Downtown' textSize='1.125rem' textWeight='400'/>
+                    </div>
+                    <div className='lg:ml-[1.25rem]' style={{ width:'8.75rem',height:'2rem' }}>
+                        <NewTag text='HClose to canal' textSize='1.125rem' textWeight='400'/>
+                    </div>
+                    <div className='lg:ml-[1.25rem]' style={{ width:'8.75rem',height:'2rem' }}>
+                        <NewTag text='Close to DIFC ' textSize='1.125rem' textWeight='400'/>
+                    </div>
+                    <div className='lg:ml-[1.25rem]' style={{ width:'8.75rem',height:'2rem' }}>
+                        <NewTag text='Fully FURNISHED' textSize='1.125rem' textWeight='400'/>
+                    </div>
+                    <div className='ml-auto lg:flex mr-[2.4375rem] hidden '>
+
+                        <div className='ml-auto mr-[1.5625rem]'>
+                            <SliderButton title='Price By' options={['AED','USD','EUR']}/>
+                        </div>
+                        <div className='ml-auto x'>
+                            <SliderButton title='Size By' options={['SQ','USD','EUR']}/>
+                        </div>
+                    </div>
                 </div>
-                <div className='ml-auto x'>
-                    <SliderButton title='Size By' options={['SQ','USD','EUR']}/>
-                </div>
-            </div>
         </div>
-        <div className='w-[86.0625rem] flex justify-center mx-auto'>
-            <div className='w-[48.3125rem] h-[34.71875rem] mt-[0.725rem]'>
-                <div className='text-grade1 text-[1.875rem] font-[600]'>
+        <div className='lg:w-[86.0625rem] w-[95%] flex flex-col lg:flex-row justify-center mx-auto'>
+            <div className='lg:w-[48.3125rem] w-full lg:h-[34.71875rem] h:max mt-[0.725rem]'>
+                <div className='text-grade1 lg:text-[1.875rem] text-[1.4rem] font-[600]'>
                     SOCIETY HOUSE
                 </div>
-                <div className='w-[26.875rem] mt-[0.7rem] text-grade1 text-[1.25rem] leading-[1.60375rem] font-[600]'>
+                <div className='lg:w-[26.875rem] w-full mt-[0.7rem] text-grade1 lg:text-[1.25rem] text-[1rem] lg:leading-[1.60375rem] leading-[1.45rem] font-[600]'>
                     Where Culture, Business, and Iconic Landmarks
                     Collide in Electrifying Harmony
                 </div>
@@ -67,7 +70,7 @@ const ProjectInfo = () => {
 
                         <img src={mapIcon} alt=""  className='w-[1.183125rem] h-[1.1225rem] '/>
 
-                        <div className='text-[1.25rem] text-grade ml-[0.441875rem]'>
+                        <div className='lg:text-[1.25rem] text-[1rem] text-grade ml-[0.441875rem]'>
 
                             Downtown Dubai
                         </div>
@@ -78,7 +81,7 @@ const ProjectInfo = () => {
                 </div>
 
 
-                    <div className='w-[48.325625rem] h-[21.606875rem] flex flex-wrap gap-x-[1.875rem] gap-y-[2.018125rem] mt-[1.564375rem]'>
+                    <div className='lg:w-[48.325625rem] lg:h-[21.606875rem]w-full h-max justify-center flex flex-wrap gap-x-[0.8rem] smd:gap-x-[1.1rem] lg:gap-x-[1.875rem] gap-y-[2.018125rem] mt-[1.564375rem]'>
                         <BoxMaster
                             BoxType='developer'
                             boxArgs={{
@@ -378,29 +381,64 @@ const ProjectInfo = () => {
 
                     </div>
             </div>
-            <div className='h-[38.125rem] z-[2] relative mt-[-3.75rem] ml-[2.9375rem]'>
+            <div className='h-[38.125rem] z-[2] relative mt-[-3.75rem] ml-[2.9375rem] hidden lg:block'>
                 <InElementSeperator width='0.375rem'/>
             </div>
-            <div className='w-[31.3125rem] ml-[2.9375rem] shadow-[inset_-0.3125rem_-0.3125rem_0.5rem_#FFFFFF,inset_0.3125rem_0.3125rem_0.4375rem_#B6C3C5] h-[29.5625rem] rounded-[0.9375rem] mt-[2.75rem] flex flex-col items-center justify-center '>
-                <div className='w-[28.88625rem] h-[27.18125rem] shadow-[-0.250746875rem_-0.250746875rem_0.401195rem_#FFFFFF,0.250746875rem_0.250746875rem_0.351045625rem_#B6C3C5] rounded-[0.75rem] flex justify-center items-center'>
-                    <div className='w-[27.18125rem] h-[26.42rem] flex flex-col items-center'>
-                        <div className='text-grade1 text-[1.739375rem] leading-[2.11875rem] font-[600] text-center'>
+            <div className='h-[0.375rem] w-full z-[2] relative my-[2rem]  block lg:hidden'>
+                <InElementSeperator width='100%'/>
+            </div>
+            <div className='lg:w-[31.3125rem] w-full lg:ml-[2.9375rem] shadow-[inset_-0.3125rem_-0.3125rem_0.5rem_#FFFFFF,inset_0.3125rem_0.3125rem_0.4375rem_#B6C3C5] lg:h-[29.5625rem] h-max py-[1rem] lg:py-0 rounded-[0.9375rem] lg:mt-[2.75rem] flex flex-col items-center justify-center mb-[0.5rem] md:mb-[1rem] lg:mb-0 '>
+                <div className='lg:w-[28.88625rem] w-[95%] lg:h-[27.18125rem] h:max shadow-[-0.250746875rem_-0.250746875rem_0.401195rem_#FFFFFF,0.250746875rem_0.250746875rem_0.351045625rem_#B6C3C5] rounded-[0.75rem] flex justify-center items-center'>
+                    <div className='lg:w-[27.18125rem] w-[100%] lg:h-[26.42rem] h:max flex flex-col items-center'>
+                        <div className='text-grade1 lg:text-[1.739375rem] text-[1.1rem] smd:text-[1.45rem] lg:leading-[2.11875rem] leading-[1.8rem] font-[600] text-center mt-[1rem] lg:mt-0 lg:w-full w-[90%]'>
                             SECURE YOUR PLACE FOR THE LIMITED-TIME OFFER
                         </div>
                         <div className='mt-[1.403125rem]'>
+                            <div className='hidden lg:block'>
 
-                            <DynamicTextWhit mainHeight='2.77375rem' mainWidth='27.18125rem' icon={userIcon} placeHolder='You full name' imgHeight='1.609375rem' imgWidth='1.609375rem' textWidth='22.98125rem' textHeight='2.77375rem' imgWrapperWidth='4.755rem' imgWrapperHeight='2.77375rem'/>
+                                <DynamicTextWhit mainHeight='2.77375rem' mainWidth='27.18125rem' icon={userIcon} placeHolder='You full name' imgHeight='1.609375rem' imgWidth='1.609375rem' textWidth='22.98125rem' textHeight='2.77375rem' imgWrapperWidth='4.755rem' imgWrapperHeight='2.77375rem'/>
+                            </div>
+                            <div className='block md:hidden'>
+
+                                <DynamicTextWhit mainHeight='1.77375rem' mainWidth='15.18125rem' icon={userIcon} placeHolder='You full name' imgHeight='1.409375rem' imgWidth='1.409375rem' textWidth='10.98125rem' textHeight='1.77375rem' imgWrapperWidth='3.755rem' imgWrapperHeight='1.77375rem'/>
+                            </div>
+                            <div className='hidden md:block lg:hidden'>
+
+                                <DynamicTextWhit mainHeight='2.77375rem' mainWidth='21.18125rem' icon={userIcon} placeHolder='You full name' imgHeight='1.609375rem' imgWidth='2.409375rem' textWidth='15.98125rem' textHeight='2.17375rem' imgWrapperWidth='4.755rem' imgWrapperHeight='2.17375rem'/>
+                            </div>
                         </div>
                         <div className='mt-[2.57625rem]'>
 
-                            <DynamicTextWhit mainHeight='2.77375rem' mainWidth='27.18125rem' icon={userIcon} placeHolder='You full name' imgHeight='1.609375rem' imgWidth='1.609375rem' textWidth='22.98125rem' textHeight='2.77375rem' imgWrapperWidth='4.755rem' imgWrapperHeight='2.77375rem'/>
+                             <div className='hidden lg:block'>
+
+                                <DynamicTextWhit mainHeight='2.77375rem' mainWidth='27.18125rem' icon={userIcon} placeHolder='You full name' imgHeight='1.609375rem' imgWidth='1.609375rem' textWidth='22.98125rem' textHeight='2.77375rem' imgWrapperWidth='4.755rem' imgWrapperHeight='2.77375rem'/>
+                            </div>
+                            <div className='block md:hidden'>
+
+                                <DynamicTextWhit mainHeight='1.77375rem' mainWidth='15.18125rem' icon={userIcon} placeHolder='You full name' imgHeight='1.409375rem' imgWidth='1.409375rem' textWidth='10.98125rem' textHeight='1.77375rem' imgWrapperWidth='3.755rem' imgWrapperHeight='1.77375rem'/>
+                            </div>
+                            <div className='hidden md:block lg:hidden'>
+
+                                <DynamicTextWhit mainHeight='2.77375rem' mainWidth='21.18125rem' icon={userIcon} placeHolder='You full name' imgHeight='1.609375rem' imgWidth='2.409375rem' textWidth='15.98125rem' textHeight='2.17375rem' imgWrapperWidth='4.755rem' imgWrapperHeight='2.17375rem'/>
+                            </div>
                         </div>
                         <div className='mt-[2.57625rem]'>
 
-                            <DynamicTextWhit mainHeight='2.77375rem' mainWidth='27.18125rem' icon={userIcon} placeHolder='You full name' imgHeight='1.609375rem' imgWidth='1.609375rem' textWidth='22.98125rem' textHeight='2.77375rem' imgWrapperWidth='4.755rem' imgWrapperHeight='2.77375rem'/>
+                             <div className='hidden lg:block'>
+
+                                <DynamicTextWhit mainHeight='2.77375rem' mainWidth='27.18125rem' icon={userIcon} placeHolder='You full name' imgHeight='1.609375rem' imgWidth='1.609375rem' textWidth='22.98125rem' textHeight='2.77375rem' imgWrapperWidth='4.755rem' imgWrapperHeight='2.77375rem'/>
+                            </div>
+                            <div className='block md:hidden'>
+
+                                <DynamicTextWhit mainHeight='1.77375rem' mainWidth='15.18125rem' icon={userIcon} placeHolder='You full name' imgHeight='1.409375rem' imgWidth='1.409375rem' textWidth='10.98125rem' textHeight='1.77375rem' imgWrapperWidth='3.755rem' imgWrapperHeight='1.77375rem'/>
+                            </div>
+                            <div className='hidden md:block lg:hidden'>
+
+                                <DynamicTextWhit mainHeight='2.77375rem' mainWidth='21.18125rem' icon={userIcon} placeHolder='You full name' imgHeight='1.609375rem' imgWidth='2.409375rem' textWidth='15.98125rem' textHeight='2.17375rem' imgWrapperWidth='4.755rem' imgWrapperHeight='2.17375rem'/>
+                            </div>
                         </div>
-                        <div className='mt-[2.455rem] w-[13.590625rem] h-[2.718125rem] rounded-[5.4375rem] border-[#DCE3E3] border-[0.0625rem] flex justify-center items-center shadow-[-0.248221875rem_-0.248221875rem_0.397155rem_#FFFFFF,0.248221875rem_0.248221875rem_0.347510625rem_#B6C3C5] cursor-pointer hover:shadow-[inset_-0.248221875rem_-0.248221875rem_0.397155rem_#FFFFFF,inset_0.248221875rem_0.248221875rem_0.347510625rem_#B6C3C5]'>
-                            <div className='text-grade text-[1.413125rem] font-[600] '>
+                        <div className='lg:mt-[2.455rem] mt-[1.5rem] mb-[1.2rem] lg:mb-0 w-[13.590625rem] h-[2.718125rem] rounded-[5.4375rem] border-[#DCE3E3] border-[0.0625rem] flex justify-center items-center shadow-[-0.248221875rem_-0.248221875rem_0.397155rem_#FFFFFF,0.248221875rem_0.248221875rem_0.347510625rem_#B6C3C5] cursor-pointer hover:shadow-[inset_-0.248221875rem_-0.248221875rem_0.397155rem_#FFFFFF,inset_0.248221875rem_0.248221875rem_0.347510625rem_#B6C3C5]'>
+                            <div className='text-grade text-[1.1rem] smd:text-[1.413125rem] font-[600] '>
                                 Submit Details
                             </div>
                         </div>
