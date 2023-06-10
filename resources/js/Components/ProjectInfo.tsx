@@ -26,9 +26,9 @@ import completion from '../../assets/compleationIcon.svg'
 import SliderButton from './Home/SliderButton'
 const ProjectInfo = () => {
   return (
-    <div className=' lg:w-[91.25rem] lg:h-[38.125rem] w-[80vw] h-max border-[#CAD4D5] border-[0.0625rem] shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] rounded-[0.98125rem] overflow-hidden'>
+    <div className=' lg:w-[91.25rem] lg:h-[38.125rem] w-[90vw] h-max border-[#CAD4D5] border-[0.0625rem] shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] rounded-[0.98125rem] overflow-hidden'>
             <div className='w-full lg:h-[3.75rem] h-max py-[1rem] lg:py-0 border-[#DCE3E3] border-[0.0625rem] shadow-[-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] '>
-                <div className='flex flex-wrap items-center lg:gap-0 gap-[1rem] justify-center lg:w-full w-[90%] mx-auto lg:mx-0'>
+                <div className=' hidden lg:flex flex-wrap items-center lg:gap-0 gap-[1rem] justify-center lg:w-full w-[90%] mx-auto lg:mx-0'>
 
                     <div className='lg:ml-[1.5rem] ' style={{ width:'8.75rem',height:'2rem' }}>
                         <NewTag text='Burj Khalifa' textSize='1.125rem' textWeight='400'/>
@@ -55,13 +55,40 @@ const ProjectInfo = () => {
                         </div>
                     </div>
                 </div>
+                <div className=' grid grid-cols-2 md:grid-cols-3 lg:hidden flex-wrap items-center lg:gap-0 gap-[1rem] justify-center lg:w-full w-[90%] mx-auto lg:mx-0'>
+
+                    <div className='lg:ml-[1.5rem] ' style={{ width:'100%',height:'2rem' }}>
+                        <NewTag text='Burj Khalifa' textSize='0.835' textWeight='400'/>
+                    </div>
+                    <div className='lg:ml-[1.25rem]' style={{ width:'100%',height:'2rem' }}>
+                        <NewTag text='Downtown' textSize='0.835' textWeight='400'/>
+                    </div>
+                    {/* <div className='lg:ml-[1.25rem]' style={{ width:'100%',height:'2rem' }}>
+                        <NewTag text='HClose to canal' textSize='0.835' textWeight='400'/>
+                    </div> */}
+                    <div className='lg:ml-[1.25rem]' style={{ width:'100%',height:'2rem' }}>
+                        <NewTag text='Close to DIFC ' textSize='0.835' textWeight='400'/>
+                    </div>
+                    <div className='lg:ml-[1.25rem]' style={{ width:'100%',height:'2rem' }}>
+                        <NewTag text='Fully FURNISHED' textSize='0.835' textWeight='400'/>
+                    </div>
+                    <div className='ml-auto lg:flex mr-[2.4375rem] hidden '>
+
+                        <div className='ml-auto mr-[1.5625rem]'>
+                            <SliderButton title='Price By' options={['AED','USD','EUR']}/>
+                        </div>
+                        <div className='ml-auto x'>
+                            <SliderButton title='Size By' options={['SQ','USD','EUR']}/>
+                        </div>
+                    </div>
+                </div>
         </div>
         <div className='lg:w-[86.0625rem] w-[95%] flex flex-col lg:flex-row justify-center mx-auto'>
             <div className='lg:w-[48.3125rem] w-full lg:h-[34.71875rem] h:max mt-[0.725rem]'>
                 <div className='text-grade1 lg:text-[1.875rem] text-[1.4rem] font-[600]'>
                     SOCIETY HOUSE
                 </div>
-                <div className='lg:w-[26.875rem] w-full mt-[0.7rem] text-grade1 lg:text-[1.25rem] text-[1rem] lg:leading-[1.60375rem] leading-[1.45rem] font-[600]'>
+                <div className='lg:w-[26.875rem] w-full mt-[0.7rem] text-grade1 lg:text-[1.25rem] text-[1rem] lg:leading-[1.60375rem] leading-[1.45rem] font-[400]'>
                     Where Culture, Business, and Iconic Landmarks
                     Collide in Electrifying Harmony
                 </div>
@@ -81,7 +108,7 @@ const ProjectInfo = () => {
                 </div>
 
 
-                    <div className='lg:w-[48.325625rem] lg:h-[21.606875rem]w-full h-max justify-center flex flex-wrap gap-x-[0.8rem] smd:gap-x-[1.1rem] lg:gap-x-[1.875rem] gap-y-[2.018125rem] mt-[1.564375rem]'>
+                    <div className='lg:w-[48.325625rem] lg:h-[21.606875rem]w-full h-max justify-center flex flex-wrap gap-x-[1.2rem] smd:gap-x-[2.5rem] lg:gap-x-[1.875rem] gap-y-[2.018125rem] mt-[1.564375rem]'>
                         <BoxMaster
                             BoxType='developer'
                             boxArgs={{
@@ -384,10 +411,10 @@ const ProjectInfo = () => {
             <div className='h-[38.125rem] z-[2] relative mt-[-3.75rem] ml-[2.9375rem] hidden lg:block'>
                 <InElementSeperator width='0.375rem'/>
             </div>
-            <div className='h-[0.375rem] w-full z-[2] relative my-[2rem]  block lg:hidden'>
+            {/* <div className='h-[0.375rem] w-full z-[2] relative my-[2rem]  block lg:hidden'>
                 <InElementSeperator width='100%'/>
-            </div>
-            <div className='lg:w-[31.3125rem] w-full lg:ml-[2.9375rem] shadow-[inset_-0.3125rem_-0.3125rem_0.5rem_#FFFFFF,inset_0.3125rem_0.3125rem_0.4375rem_#B6C3C5] lg:h-[29.5625rem] h-max py-[1rem] lg:py-0 rounded-[0.9375rem] lg:mt-[2.75rem] flex flex-col items-center justify-center mb-[0.5rem] md:mb-[1rem] lg:mb-0 '>
+            </div> */}
+            <div className='lg:w-[31.3125rem] w-full lg:ml-[2.9375rem] mt-[2rem]  shadow-[inset_-0.3125rem_-0.3125rem_0.5rem_#FFFFFF,inset_0.3125rem_0.3125rem_0.4375rem_#B6C3C5] lg:h-[29.5625rem] h-max py-[0.5rem] md:py-[1rem] lg:py-0 rounded-[0.9375rem] lg:mt-[2.75rem] flex flex-col items-center justify-center mb-[0.5rem] md:mb-[1rem] lg:mb-0 '>
                 <div className='lg:w-[28.88625rem] w-[95%] lg:h-[27.18125rem] h:max shadow-[-0.250746875rem_-0.250746875rem_0.401195rem_#FFFFFF,0.250746875rem_0.250746875rem_0.351045625rem_#B6C3C5] rounded-[0.75rem] flex justify-center items-center'>
                     <div className='lg:w-[27.18125rem] w-[100%] lg:h-[26.42rem] h:max flex flex-col items-center'>
                         <div className='text-grade1 lg:text-[1.739375rem] text-[1.1rem] smd:text-[1.45rem] lg:leading-[2.11875rem] leading-[1.8rem] font-[600] text-center mt-[1rem] lg:mt-0 lg:w-full w-[90%]'>

@@ -26,6 +26,7 @@ import paymentplanIcon from '../../../assets/paymentplanIcon.svg'
 import floorplanIcon from '../../../assets/floorplanIcon.svg'
 import brochurIcon from '../../../assets/brochure.svg'
 import brochreLightIcona from '../../../assets/brochreLightIcona.svg'
+import SimpleSmallSwiper from './SimpleSmallSwiper'
 const ImgGallery = () => {
     const handleClick = () => {
         gallery.current.style.zIndex = '9999999999999'
@@ -41,15 +42,15 @@ const ImgGallery = () => {
     }
     const gallery = useRef(null)
   return (
-        <div className='lg:w-[95.625rem] lg:h-[41.1875rem] h-max  pb-[1rem] lg:pb-0 w-[80vw] border-[#CAD4D5] border-[0.0625rem]  shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] flex flex-col items-center mt-[0rem] overflow-hidden mx-auto'>
-            <div className='lg:w-[91.74125rem] lg:h-[34.468125rem] h-max flex lg:flex-row justify-between items-center mt-[1.6875rem]  w-[100%] flex-col mx-auto '>
+        <div className='lg:w-[95.625rem] lg:h-[41.1875rem] h-max  pb-[1rem] lg:pb-0 w-[90vw] border-[#CAD4D5] border-[0.0625rem] rounded-[0.7875rem]  shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] flex flex-col items-center mt-[0rem] overflow-hidden mx-auto'>
+            <div className='lg:w-[91.74125rem] lg:h-[34.468125rem] h-max flex lg:flex-row justify-between items-center mt-[0.6875rem]  w-[100%] flex-col mx-auto '>
             <div className='flex justify-center items-center lg:w-[56.798125rem] w-[95%] h-max lg:h-[33.1875rem] lg:py-0 py-[0.5rem] border-[#DCE3E3] border-[0.0625rem] rounded-[0.84375rem] shadow-[inset_-0.2805075rem_-0.2805075rem_0.448811875rem_#FFFFFF,inset_0.2805075rem_0.2805075rem_0.39271rem_#B6C3C5]'>
                 <div className='lg:w-[54.8125rem] w-[95%] h-max lg:h-[31.3125rem] rounded-[0.84375rem] relative '>
                     <div className='lg:block hidden'>
 
                         <NewCardImage src={landingHero} rounded='0.84375'/>
                     </div>
-                    <div className=' lg:hidden w-[100%] h-full rounded-[0.84375rem] flex relative md:absolute'>
+                    <div className=' lg:hidden w-[100%] h-full rounded-[0.84375rem] flex  absolute'>
                         <img src={landingHero} alt="" className='w-[100%] rounded-[0.84375rem]'/>
                         <div className={`w-full h-full absolute top-0 left-0 bg-[#01141666] mix-blend-overlay rounded-[0.84375rem]`}></div>
                     </div>
@@ -91,38 +92,38 @@ const ImgGallery = () => {
                         </div>
                     </div>
                     {/* replacment */}
-                    <div className='aspect-[877/510] w-[95%] relative top-0 left-0  justify-start md:items-start hidden md:flex  items-center gap-x-[10%] flex-col flex-wrap  lg:hidden mx-auto'>
-                        <div className='w-[90%] md:w-[45%] h-[2.1875rem] birder-[#E6EDED] border-[0.0625rem] rounded-[6.25rem] flex justify-center items-center hover:bg-[#dbe9e94d] transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
+                    <div className='aspect-[877/510] w-[95%] relative top-0 left-0  justify-start md:items-start flex md:flex  items-center gap-x-[10%] flex-col  lg:hidden mx-auto'>
+                        <div className='w-fit md:w-[45%] h-[2.1875rem]  rounded-[6.25rem] flex justify-center items-center  transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
                         <div className='font-[600] text-[#fff] lg:text-[1rem] text-[0.7rem] '>
                             FURNISHED LUXURY APARTMENTS
                         </div>
                         </div>
-                        <div className='w-[90%] md:w-[45%] h-[2.1875rem] birder-[#E6EDED] border-[0.0625rem] rounded-[6.25rem] flex justify-center items-center hover:bg-[#dbe9e94d] transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
+                        <div className='w-fit md:w-[45%] h-[2.1875rem]  rounded-[6.25rem] flex justify-center items-center  transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
                             <div className='font-[600] text-[#fff] lg:text-[1rem] text-[0.7rem] '>
                                 WALKING DISTANCE TO DUBAI MALL
                             </div>
                         </div>
-                        <div className='w-[90%] md:w-[45%] h-[2.1875rem] birder-[#E6EDED] border-[0.0625rem] rounded-[6.25rem] flex justify-center items-center hover:bg-[#dbe9e94d] transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
+                        <div className='w-fit md:w-[45%] h-[2.1875rem]  rounded-[6.25rem] flex justify-center items-center  transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
                             <div className='font-[600] text-[#fff] lg:text-[1rem] text-[0.7rem] '>
                                 ACCESS TO PRE-LAUNCH OFFERS
                             </div>
                         </div>
-                        <div className='w-[90%] md:w-[45%] h-[2.1875rem] birder-[#E6EDED] border-[0.0625rem] rounded-[6.25rem] flex justify-center items-center hover:bg-[#dbe9e94d] transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
+                        <div className='w-fit md:w-[45%] h-[2.1875rem]  rounded-[6.25rem] flex justify-center items-center  transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
                             <div className='font-[600] text-[#fff] lg:text-[1rem] text-[0.7rem] '>
                                 4.5 YEARS PAYMENT
                             </div>
                         </div>
-                        <div className='w-[90%] md:w-[45%] h-[2.1875rem] birder-[#E6EDED] border-[0.0625rem] rounded-[6.25rem] flex justify-center items-center hover:bg-[#dbe9e94d] transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
+                        <div className='w-fit md:w-[45%] h-[2.1875rem]  rounded-[6.25rem] flex justify-center items-center  transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
                             <div className='font-[600] text-[#fff] lg:text-[1rem] text-[0.7rem] '>
                                 POST HANDOVER PAYMENT PLAN
                             </div>
                         </div>
-                        <div className='w-[90%] md:w-[45%] h-[2.1875rem] birder-[#E6EDED] border-[0.0625rem] rounded-[6.25rem] flex justify-center items-center hover:bg-[#dbe9e94d] transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
+                        <div className='w-fit md:w-[45%] h-[2.1875rem]  rounded-[6.25rem] flex justify-center items-center  transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
                             <div className='font-[600] text-[#fff] lg:text-[1rem] text-[0.7rem] '>
                                 HANDOVER IN Q2 2026
                             </div>
                         </div>
-                        <div className='w-[90%] md:w-[45%] h-[2.1875rem] birder-[#E6EDED] border-[0.0625rem] rounded-[6.25rem] flex justify-center items-center hover:bg-[#dbe9e94d] transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
+                        <div className='w-fit md:w-[45%] h-[2.1875rem]  rounded-[6.25rem] flex justify-center items-center  transition-all cursor-pointer text-center p-[1.2rem] my-[1.09375rem]'>
                             <div className='font-[600] text-[#fff] lg:text-[1rem] text-[0.7rem] '>
                                 STARTING PRICE  AED 960,000 / $263,000
                             </div>
@@ -131,7 +132,7 @@ const ImgGallery = () => {
                 </div>
             </div>
 
-            <div className='lg:w-[32.86625rem] lg:h-[33.188125rem] h-max flex flex-wrap w-[95%] mx-auto justify-between lg:mt-[0rem] mt-[2rem]'>
+            <div className='lg:w-[32.86625rem] lg:h-[33.188125rem] h-max lg:flex hidden flex-wrap w-[95%] mx-auto justify-between lg:mt-[0rem] mt-[2rem]'>
                 <div className='lg:w-[15.920625rem] w-[46%] aspect-square lg:h-[16.07rem] rounded-[3.6%_33.9%_2.4%_33.9%] border-[#CAD4D5] border-[0.0625rem] shadow-[inset_-0.1424525rem_-0.1424525rem_0.284905rem_0.07122625rem_#FFFFFF,inset_0.1424525rem_0.1424525rem_0.284905rem_#BABFBF] flex justify-center items-center group overflow-hidden'>
                     <img src={imgLT} alt="" className='lg:w-[14.68125rem] lg:h-[14.86625rem] w-[94%]  aspect-square rounded-[3.6%_33.9%_2.4%_33.9%] group-hover:scale-[1.3] transition-all '/>
 
@@ -155,6 +156,10 @@ const ImgGallery = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className='lg:hidden w-[90%] h-max  mx-auto'>
+                <SimpleSmallSwiper/>
             </div>
 
         </div>

@@ -20,7 +20,7 @@ const MapWIcons = (props: Props) => {
         const map = new mapboxgl.Map({
             container: mapContainerRef.current,
             style: 'mapbox://styles/trevi98/cli19khgh02g701qy1jsmb8wr',
-            center: [55.3657800858067, 25.253378250856844 ], // Dubai coordinates
+            center: [55.286839026287055,25.194415200503425], // Dubai coordinates
             zoom: props.zoom?props.zoom:14,
             maxZoom: 18,
             minZoom: 10,
@@ -44,7 +44,7 @@ const MapWIcons = (props: Props) => {
                     // },
                     'layout':{
                         'icon-image':`icon${index}`,
-                        'icon-size':1,
+                        'icon-size':0.6,
                         "icon-allow-overlap": true,
                     },
                     "source": {

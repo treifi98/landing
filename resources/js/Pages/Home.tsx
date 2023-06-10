@@ -1,6 +1,6 @@
 import ProjectInfo from '../Components/ProjectInfo'
 import { Link } from '@inertiajs/react'
-import projlogo from '../../assets/projlogo.svg'
+import projlogo from '../../assets/sLogo.svg'
 import React, { useState } from 'react'
 import ImgGallery from '@/Components/Home/ImgGallery'
 import SimpleSwiper from '@/Components/Home/SimpleSwiper'
@@ -24,11 +24,13 @@ import mapLogo from '../../assets/map.svg'
 import burjkhalifa from '../../assets/burjkhalifa.svg'
 import DubaiMall from '../../assets/DubaiMall.svg'
 import airPlain from '../../assets/airPlain.svg'
+import attraction from '../../assets/pin.png'
+
 import difc from '../../assets/difc.svg'
 import bjk from '../../assets/bjk.png'
-import dbml from '../../assets/dbml.png'
+import dbml from '../../assets/mall.png'
 import DIFC from '../../assets/DIFC.png'
-import airplain from '../../assets/airplain.png'
+import airplain from '../../assets/airport.png'
 import NewElement from '@/Components/NewElement'
 import InElementSeperator from '@/Components/Home/InElementSeperator'
 import NewCardImage from '@/Components/Home/NewCardImage'
@@ -42,6 +44,7 @@ import PaymentPlanNF4 from '@/Components/Home/PaymentPlanNF4'
 import AboutProperty from '@/Components/Home/AboutProperty'
 import InquiryFormWiht from '@/Components/Home/InquiryFormWhit'
 import MapWIcons from '@/Components/Home/MapWIcons'
+import PaymentResponsive from '@/Components/Home/PaymentResponsive'
 
 const Home = () => {
     const [pointsx,setPointsx] = useState([
@@ -56,46 +59,52 @@ const Home = () => {
 
         },
         {
-            point: [55.3657800858067, 25.253378250856844 ],
+            point: [55.279403912255596,25.210595281320312],
             bg:DIFC
 
         },
         {
-            point: [55.27761347874597, 25.21108549912775],
+            point: [55.36570498395875,25.25330062298459],
             bg:airplain
+
+        },
+        {
+            point: [ 55.286839026287055,25.194415200503425],
+            bg:attraction
 
         },
     ])
   return (
-    <div className='bg-[#E6EDED] !font-[nova]'>
-         <div className={`w-full lg:h-[6.25rem] min-h-[6.25rem] relative z-10 font-[nova] bg-[#002D31] bg-no-repeat bg-cover bg-right-bottom flex justify-start   `}>
+    <div className='bg-[#E6EDED] !font-[nova] '>
+         <div className={`w-full lg:h-[6.25rem] lg:min-h-[6.25rem] h-[5rem] relative z-10 font-[nova] bg-[#002D31] bg-no-repeat bg-cover bg-right-bottom flex justify-start   `}>
             {/* <div className={` w-full h-full `}> */}
-            <div className='flex justify-between w-[93.0625rem] mx-auto'>
+            <div className='flex justify-between lg:w-[93.0625rem] w-[95%] mx-auto'>
 
-                <div className='mt-[0.7rem] w-[11.549375rem] h-[4.110625rem] flex items-center shadow-[-0.2510175rem_-0.2510175rem_0.417528125rem_-0.13917625rem_#007580,0.2510175rem_0.2510175rem_5.25218px_0.13917625rem_#002023] rounded-[0.486875rem] '>
+                <div className='mt-[0.6rem] lg:w-[11.549375rem] lg:h-[4.8125rem] w-[7.5rem] h-[3.7rem] flex items-center shadow-[-0.2510175rem_-0.2510175rem_0.417528125rem_-0.13917625rem_#007580,0.2510175rem_0.2510175rem_5.25218px_0.13917625rem_#002023] rounded-[0.486875rem] '>
                     <Link href='/' className='w-full h-full flex justify-center items-center'>
 
-                        <img src={projlogo} alt="" className='w-[9.200625rem] h-[2.740625rem] object-contain object-center'/>
+                        <img src={projlogo} alt="" className='lg:w-[7.200625rem] lg:h-[3.814375rem] w-[7.5rem] h-[3rem] object-contain object-center'/>
                     </Link>
                 </div>
                 {/* </div> */}
                 <div className='text-[1.375rem] font-[400] text-[#fff] place-self-center hidden lg:block'>
                     Downtown DubaI SOCIETY HOUSE COME HOME TO & BELONG SOMEWHERE EXCEPTIONAL
                 </div>
-                <div className='place-self-center flex gap-x-[1.875rem] gap-y-[0.5rem] flex-wrap '>
+                <div className='place-self-center flex lg:gap-x-[1.875rem] gap-[1rem] gap-y-[0.5rem] flex-wrap '>
 
-                    <div className='w-[3.4375rem] h-[3.4375rem] '>
-                        <ActionCircle imgHeight='1.5625' imgWidth='1.5625' imgSrc={phoneIcon} />
+                    <div className='lg:w-[3.6375rem] lg:h-[3.6375rem] w-[2.2rem] h-[2.2rem]'>
+                        <ActionCircle imgHeight='1.0625' imgWidth='1.0625' imgSrc={phoneIcon} />
                     </div>
-                    <div className='w-[3.4375rem] h-[3.4375rem] '>
-                        <ActionCircle imgHeight='1.5625' imgWidth='1.5625' imgSrc={phoneIcon} />
+                    <div className='lg:w-[3.6375rem] lg:h-[3.6375rem] w-[2.2rem] h-[2.2rem]'>
+                        <ActionCircle imgHeight='1.0625' imgWidth='1.0625' imgSrc={phoneIcon} />
                     </div>
-                    <div className='w-[3.4375rem] h-[3.4375rem] '>
-                        <ActionCircle imgHeight='1.5625' imgWidth='1.5625' imgSrc={phoneIcon} />
+                    <div className='lg:w-[3.6375rem] lg:h-[3.6375rem] w-[2.2rem] h-[2.2rem]'>
+                        <ActionCircle imgHeight='1.0625' imgWidth='1.0625' imgSrc={phoneIcon} />
                     </div>
-                    <div className='w-[3.4375rem] h-[3.4375rem] '>
-                        <ActionCircle imgHeight='1.5625' imgWidth='1.5625' imgSrc={phoneIcon} />
+                    <div className='lg:w-[3.6375rem] lg:h-[3.6375rem] w-[2.2rem] h-[2.2rem]'>
+                        <ActionCircle imgHeight='1.0625' imgWidth='1.0625' imgSrc={phoneIcon} />
                     </div>
+
                 </div>
             </div>
         </div>
@@ -131,22 +140,24 @@ const Home = () => {
 
         </div>
         <div className='mt-[3.625rem] w-max mx-auto'>
-            <div className='lg:w-[91.25rem] lg:h-[40.8125em] w-[80vw] h-max  border-[#CAD4D5] border-[0.0625rem] shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] rounded-[0.98125rem] overflow-hidden'>
+            <div className='lg:w-[91.25rem] lg:h-[40.8125em] w-[90vw] h-max  border-[#CAD4D5] border-[0.0625rem] shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] rounded-[0.98125rem] overflow-hidden'>
                 <div className='w-full lg:h-[3.7rem] h-max border-[#DCE3E3] border-[0.0625rem] shadow-[-0.285380625rem_-0.285380625rem_0.456609375rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] lg:flex items-center  '>
                     <div className='flex items-center h-[100%]'>
+                        <div className='ml-[0.75rem] w-[3.5125rem] h-[3.5125rem] border-r-[0.125rem] border-[#CAD4D5] pr-[0.2rem]  flex justify-center items-center  mt-[0.2rem]'>
 
-                        <img src={amaenitiesIcon} alt="" className='w-[3.3125rem] h-[3.105625rem] ml-[0.75rem]'/>
+                            <img src={amaenitiesIcon} alt="" className='md:w-[3.3125rem] md:h-[3.105625rem] w-[2.5125rem] h-[3.0125rem] '/>
+                        </div>
                         <div className='ml-[0.5rem] h-full'>
                             <InElementSeperator width='0.5rem'/>
                         </div>
-                        <div className='text-grade text-[2rem] font-[600] ml-[1.375rem]'>
+                        <div className='text-grade md:text-[2rem] text-[1.2rem] font-[600] md:ml-[1.375rem]'>
                             Amenities
                         </div>
                     </div>
                     <div className='ml-[1.375rem] h-full lg:block hidden'>
                         <InElementSeperator width='0.5rem'/>
                     </div>
-                    <div className='text-grade1 lg:ml-[3.1875rem] ml-[0.75rem] text-[1.625rem]'>
+                    <div className='text-grade1 lg:ml-[3.1875rem] ml-[0.75rem] md:text-[1.625rem] etxt-[1.0375rem]'>
                         EVERY THING YOU COULD WANT, EXACTLY WHERE YOU WANT IT.
                     </div>
                 </div>
@@ -216,12 +227,12 @@ const Home = () => {
                             Outdoor horizon deck and bar area
                         </div>
                     </div>
-                    <div className='lg:h-[15.75rem] lg:w-[32.125rem] lg:max-w-[32.125rem]  max-w-[30rem] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.33392625rem_-0.33392625rem_0.66785rem_0.166963125rem_#FFFFFF,0.33392625rem_0.33392625rem_0.66785rem_#BABFBF] rounded-[0.83475rem] flex flex-col items-center py-[0.5rem] lg:py-0 pb-[0.7rem] lg:pb-0 mx-[1rem] md:mx-0 '>
-                        <div className='lg:w-[30.6rem] w-[90%] mt-[0.75rem] text-[1.1rem] leading-[2.0425rem] text-grade font-[400]'>
+                    <div className='lg:h-[15.75rem] lg:w-[32.125rem] lg:max-w-[32.125rem]  max-w-[30rem] lg:border-[#CAD4D5] lg:border-[0.0625rem] lg:shadow-[-0.33392625rem_-0.33392625rem_0.66785rem_0.166963125rem_#FFFFFF,0.33392625rem_0.33392625rem_0.66785rem_#BABFBF] rounded-[0.83475rem] flex flex-col items-center py-[0.5rem] lg:py-0 pb-[0.7rem] lg:pb-0 mx-[1rem] md:mx-0 '>
+                        <div className='lg:w-[30.6rem] w-[90%] mt-[0.75rem] text-[0.9rem] leading-[2.0425rem] text-grade font-[400]'>
                             SOCITY HOUSE DOWNTOWN ENSURES THAT EVERY RESIDANT CAN ENJOY A WORLD-CLASS LIFESTYLE, WHERE CONVENIENCE AND INDULGENCE INTERTWINE. EMBRACE THE EXTRAORDINARY AND MAKE SOCIETY HOUSE YOUR HOME. REGISTER NOW TO EMBARK ON AN EXCEPTIONAL LIVING EXPERIENCE!
                         </div>
-                        <div className='lg:w-[13.590625rem] lg:h-[2.718125rem] max-w-[13.5rem] lg:max-w-[14rem] flex justify-center items-center bg-custom-gradient md:place-self-end rounded-[6.25rem] shadow-[0rem_0.309226875rem_0.309226875rem_rgba(0,0,0,0.25)] md:mt-[-1.5rem] md:mr-[3.596875rem] cursor-pointer hover:shadow-[inst_0rem_0.309226875rem_0.309226875rem_rgba(0,0,0,0.25)]'>
-                            <div className='text-[#fff] lg:text-[1.413125rem] text-[1.2rem] font-[600] px-[0.7rem] py-[0.1rem] lg:py-0 lg:px-0 '>
+                        <div className='lg:w-[13.590625rem] lg:h-[2.718125rem] max-w-[13.5rem] lg:max-w-[14rem] flex justify-center items-center bg-custom-gradient md:place-self-end rounded-[6.25rem] shadow-[0rem_0.309226875rem_0.309226875rem_rgba(0,0,0,0.25)] md:mt-[-1.5rem] md:mr-[3.596875rem] cursor-pointer hover:shadow-[inst_0rem_0.309226875rem_0.309226875rem_rgba(0,0,0,0.25)] mt-[0.5rem] lg:mt-0 '>
+                            <div className='text-[#fff] lg:text-[1.413125rem] text-[1rem] font-[600] px-[0.7rem] py-[0.1rem] lg:py-0 lg:px-0 '>
                                 Register Now
                             </div>
                         </div>
@@ -231,32 +242,38 @@ const Home = () => {
 
         </div>
         <div className='mt-[3.625rem] w-max mx-auto'>
-            <div className='lg:w-[91.25rem] lg:h-[38.125rem] w-[80vw] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] rounded-[0.981875rem] overflow-hidden '>
+            <div className='lg:w-[91.25rem] lg:h-[38.125rem] w-[90vw] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] rounded-[0.981875rem] overflow-hidden '>
                 <div className='w-full lg:h-[3.75rem] h-max border-[#DCE3E3] border-[0.0625rem] shadow-[-0.285380625rem_-0.285380625rem_7.30575rem_#FFFFFF,0.285380625rem_0.285380625rem_0.399533125rem_#B6C3C5] lg:flex items-center py-[1rem] lg:py-0 ipad::justify-between'>
                     <div className='flex items-center overflow-hidden'>
 
-                        <img src={mapLogo} alt="" className='w-[2.4375rem] h-[2.4375rem] ml-[1rem]'/>
+                        <img src={mapLogo} alt="" className='lg:w-[2.4375rem] lg:h-[2.4375rem] w-[1.4375remr] h-[1.4375rem] ml-[1rem]'/>
                         <div className='h-full lg:ml-[1.125rem]'>
                             <InElementSeperator width='0.5rem'/>
                         </div>
-                        <div className='lg:ml-[0.1875rem] text-grade lg:text-[1.875rem] text-[1.25rem] font-[600] '>
+                        <div className='lg:ml-[0.1875rem] text-grade lg:text-[1.875rem] md:text-[1.25rem] text-[1.0375rem] font-[600] '>
                             Society House Location
                         </div>
                     </div>
-                    <div className='lg:w-[13.590625rem] lg:h-[2.718125rem] py-[0.25rem] px-[1rem] lg:py-0 lg:px:0 mx-auto lg:mx-0 w-fit flex justify-center items-center rounded-[6.25rem] bg-custom-gradient ml-auto ipad:mr-[2.096875rem] text-[#fff] lg:text-[1.413125rem] text-[1rem] font-[600] shadow-[0rem_0.309226875rem_0.309226875rem_rgba(0,0,0,0.25)]'>
+                    <div className='lg:w-[13.590625rem] lg:h-[2.718125rem] py-[0.25rem] px-[1rem] lg:py-0 lg:px:0 mx-auto lg:mx-0 w-fit hidden lg:flex justify-center items-center rounded-[6.25rem] bg-custom-gradient lg:ml-auto ipad:mr-[2.096875rem] text-[#fff] lg:text-[1.413125rem] text-[0.9rem] font-[600] shadow-[0rem_0.309226875rem_0.309226875rem_rgba(0,0,0,0.25)] mt-[0.2rem] lg:mt-0'>
                         Learn More
                     </div>
                 </div>
-                <div className='flex lg:flex-row flex-col-reverse lg:w-[86.75rem] w-[95%] mx-auto h-full'>
-                    <div className='lg:h-[31.625rem] lg:w-[38.6875rem] overflow-hidden mt-[1.5rem] rounded-[0.98125rem] w-full aspect-square lg:aspect-auto mb-[0.5rem] lg:mb-0'>
-                        <MapWIcons
-                            points={pointsx}
-                            // changes={changes}
-                            // rchanges={rchanges}
-                            zoom={11}
-                            isZoom={true}
+                <div className='flex lg:flex-row flex-col-reverse lg:w-[86.75rem] w-[95%] mx-auto h-full mb-[3rem]'>
+                    <div className='lg:h-[31.625rem] lg:w-[38.6875rem] mt-[1.5rem] rounded-[0.98125rem] w-full h-max aspect-square lg:aspect-auto mb-[0.5rem]  lg:mb-0'>
+                        <div className='w-full h-full relative '>
 
-                        />
+                            <MapWIcons
+                                points={pointsx}
+                                // changes={changes}
+                                // rchanges={rchanges}
+                                zoom={9}
+                                isZoom={true}
+
+                            />
+                            <div className='lg:w-[13.590625rem] lg:h-[2.718125rem] py-[0.25rem] px-[1rem] lg:py-0 lg:px:0 mx-auto lg:mx-0 w-fit lg:hidden flex justify-center items-center rounded-[6.25rem] bg-custom-gradient lg:ml-auto ipad:mr-[2.096875rem] text-[#fff] lg:text-[1.413125rem] text-[0.9rem] font-[600] shadow-[0rem_0.309226875rem_0.309226875rem_rgba(0,0,0,0.25)] mt-[1rem] lg:mt-0 absolute bottom-[-2.5rem] left-[calc(50%-3.5rem)]'>
+                                Learn More
+                            </div>
+                        </div>
                     </div>
                     <div className='h-fll ml-[1rem] hidden lg:block'>
                         <InElementSeperator width='0.375rem'/>
@@ -264,7 +281,7 @@ const Home = () => {
                     <div className='h-[0.375rem] block lg:hidden mt-[-7.5rem] mmd1:mt-[-5.8rem] mmd2:mt-[-4.3rem] md:mt-[-2.3rem] ipad:mt-[-0.5rem]'>
                         <InElementSeperator width='100%'/>
                     </div>
-                    <div className='lg:w-[44.75rem] lg:ml-auto lg:mt-[2.1875rem] w-full lg:scale-100 scale-[0.42] lg:block flex flex-col items-center mt-[-7rem] smd:scale-[0.44] msmd:scale-[0.458] mmd1:scale-[0.55] mmd1:mt-[-5.5rem] mmd2:scale-[0.65] mmd2:mt-[-4rem] md:scale-[0.78] md:mt-[-1.7rem] ipad:scale-[0.9] ipad:mt-[0.5rem]'>
+                    <div className='lg:w-[44.75rem] lg:ml-auto lg:mt-[2.1875rem] w-full lg:scale-100 scale-[0.47] lg:block flex flex-col items-center mt-[-7rem] smd:scale-[0.49] msmd:scale-[0.508] mmd1:scale-[0.6] mmd1:mt-[-5.5rem] mmd2:scale-[0.7] mmd2:mt-[-4rem] md:scale-[0.78] md:mt-[-1.7rem] ipad:scale-[0.95] ipad:mt-[0.5rem]'>
                         <div className=''>
 
                             <DistanceContainer distance={3.75} img={burjkhalifa} text='Burj Khalifa' />
@@ -294,8 +311,12 @@ const Home = () => {
             <FloorPlan/>
 
         </div>
-        <div className='mt-[3.625rem] w-max mx-auto mb-[1rem]'>
+        <div className='mt-[3.625rem] w-max mx-auto mb-[1rem] lg:hidden'>
             <PaymentPlanNF4/>
+
+        </div>
+        <div className='mt-[3.625rem] w-max mx-auto mb-[1rem] hidden lg:block'>
+            <PaymentResponsive/>
 
         </div>
         <div className='mt-[3.625rem] w-max mx-auto mb-[1rem]'>

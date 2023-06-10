@@ -9,11 +9,11 @@ import img from '../../../assets/dubai.png'
 import Radio from './Radio'
 const InquiryFormGreen = () => {
   return (
-    <div className='lg:w-[91.25rem] lg:h-[38.125rem] w-[80vw] h-max rounded-[0.9375rem] bg-[#002D31] flex justify-center items-center !font-[nova]'>
+    <div className='lg:w-[91.25rem] lg:h-[38.125rem] w-[90vw] h-max rounded-[0.9375rem] bg-[#002D31] flex justify-center items-center !font-[nova]'>
         <div className='lg:w-[83.783125rem] lg:h-[30.9375rem] w-[90%] h-max flex gap-[3.9375rem]'>
             <div className='flex justify-center items-center lg:w-[44.970625rem] lg:h-[30.4375rem] w-full h-max rounded-[0.971875rem] bg-[#002D31] border-[#19464B] border-[0.0625rem] shadow-[-0.274211875rem_-0.274211875rem_0.43873875rem_#04626B,0.274211875rem_0.274211875rem_0.43873875rem_#011618] my-[1rem] lg:my-0'>
                 <div className='lg:w-[42.338125rem] lg:h-[27.366875rem] w-full h-max '>
-                    <div className='flex lg:flex-row flex-col items-center lg:items-start gap-[2.19375rem] w-full lg:h-[18.975625rem] h-max '>
+                    <div className='flex lg:flex-row flex-col-reverse items-center lg:items-start lg:gap-[2.19375rem] w-full lg:h-[18.975625rem] h-max '>
                         <div className='flex h-full lg:w-[19.195rem] w-full flex-col lg:gap-[2.24875rem] gap-[1.5rem] items-center lg:items-start mt-[1rem] lg:mt-0'>
                             <div className='hidden lg:block'>
 
@@ -52,10 +52,10 @@ const InquiryFormGreen = () => {
 
                             </div>
                             <textarea name="message" id="" className='text-[#fff] bg-[#002D31] rounded-[0.425rem] lg:w-[19.195rem] w-[13.795rem] md:w-[25.195rem] h-[6.58125rem] focus:border-transparent focus:ring-0 border-none shadow-[inset_-0.137583125rem_-0.137583125rem_0.228848125rem_-1.22052px_#007580,inset_0.137583125rem_0.137583125rem_0.179920625rem_#011618] text-[1rem]' placeholder='Your message .....' ></textarea>
-                            </div>
+                        </div>
 
-                        <div className='lg:w-[20.84rem] w-[90%]  h-full rounded-[0.55rem] shadow-[-0.274211875rem_-0.274211875rem_0.43873875rem_#04626B,0.274211875rem_0.274211875rem_0.43873875rem_#011618] flex justify-center items-center'>
-                            <div className='text-[#E6EDED] lg:text-[1.25rem] text-[0.9rem] lg:w-[17.75rem] w-[95%] lg:leading-[2.09375rem] leading-[1.65rem] my-[0.5rem] lg:my-0'>
+                        <div className='lg:w-[20.84rem] w-[90%]  h-full rounded-[0.55rem] lg:shadow-[-0.274211875rem_-0.274211875rem_0.43873875rem_#04626B,0.274211875rem_0.274211875rem_0.43873875rem_#011618] flex justify-center items-center my-[1rem]'>
+                            <div className='text-[#E6EDED] lg:text-[1.25rem] text-[0.78rem] md:text-[0.9rem] lg:w-[17.75rem] w-[95%] lg:leading-[2.09375rem] leading-[1.65rem] my-[0.5rem] lg:my-0'>
 
                                 THERE'S ONLY ONE PLACE THAT CAN MATCH THE MOVEMENT, MAGIC AND MOMENTUM YOU BRING TO THE TABLE. ONLY ONE SPACE WHERE YOU AND THE SELECT FEW JUST LIKE YOU GATHER.
                             </div>
@@ -71,7 +71,7 @@ const InquiryFormGreen = () => {
                             </div>
 
                         </div>
-                        <div className='flex gap-[0.54875rem] mt-[0.755rem]'>
+                        <div className='lg:flex gap-[0.54875rem] mt-[0.755rem] hidden'>
                             <Radio/>
 
                             <div className='text-[#7D8989] text-[0.8225rem] w-[80%] lg:w-max'>

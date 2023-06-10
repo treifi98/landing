@@ -9,11 +9,11 @@ import img from '../../../assets/dubai.png'
 import RadioWhit from './RadioWhit'
 const InquiryFormWiht = () => {
   return (
-    <div className='lg:w-[91.25rem] lg:h-[38.125rem] w-[80vw] h-max  rounded-[0.9375rem] bg-[#E6EDED] flex justify-center items-center shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] border-[#CAD4D5] border-[0.0625rem] !font-[nova]'>
+    <div className='lg:w-[91.25rem] lg:h-[38.125rem] w-[90vw] h-max  rounded-[0.9375rem] bg-[#E6EDED] flex justify-center items-center shadow-[-0.39291625rem_-0.39291625rem_0.78583125rem_0.196458125rem_#FFFFFF,0.39291625rem_0.39291625rem_0.78583125rem_#BABFBF] border-[#CAD4D5] border-[0.0625rem] !font-[nova]'>
         <div className='lg:w-[83.783125rem] lg:h-[30.9375rem] w-[90%] h-max flex gap-[3.9375rem]'>
             <div className='flex justify-center items-center lg:w-[44.970625rem] lg:h-[30.4375rem] w-full h-max rounded-[0.971875rem] bg-[#E6EDED] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.33392625rem_-0.33392625rem_0.66785rem_0.166963125rem_#FFFFFF,0.33392625rem_0.33392625rem_0.66785rem_#BABFBF] my-[1rem] lg:my-0'>
             <div className='lg:w-[42.338125rem] lg:h-[27.366875rem] w-full h-max '>
-                    <div className='flex lg:flex-row flex-col items-center lg:items-start gap-[2.19375rem] w-full lg:h-[18.975625rem] h-max '>
+                    <div className='flex lg:flex-row flex-col-reverse items-center lg:items-start gap-[2.19375rem] w-full lg:h-[18.975625rem] h-max '>
                         <div className='flex h-full lg:w-[19.195rem] w-full flex-col lg:gap-[2.24875rem] gap-[1.5rem] items-center lg:items-start mt-[1rem] lg:mt-0'>
                             <div className='hidden lg:block'>
 
@@ -54,8 +54,8 @@ const InquiryFormWiht = () => {
                             <textarea name="message" id="" className='bg-[#E6EDED] rounded-[0.425rem] lg:w-[19.195rem] w-[13.795rem] md:w-[25.195rem] h-[6.58125rem] focus:border-transparent focus:ring-0 border-none shadow-[inset_-0.33392625rem_-0.33392625rem_0.66785rem_0.166963125rem_#FFFFFF,inset_0.33392625rem_0.33392625rem_0.66785rem_#BABFBF] text-[1rem]' placeholder='Your message .....'></textarea>
                         </div>
 
-                        <div className='g:w-[20.84rem] w-[90%] h-full  rounded-[0.55rem] border-[#CAD4D5] border-[0.0625rem] shadow-[-0.33392625rem_-0.33392625rem_0.66785rem_0.166963125rem_#FFFFFF,0.33392625rem_0.33392625rem_0.66785rem_#BABFBF] flex justify-center items-center'>
-                            <div className='lg:text-[1.25rem] text-[0.9rem] lg:w-[17.75rem] w-[95%] lg:leading-[2.09375rem] leading-[1.65rem] my-[0.5rem] lg:my-0'>
+                        <div className='g:w-[20.84rem] w-[90%] h-full  rounded-[0.55rem] lg:border-[#CAD4D5] lg:border-[0.0625rem] lg:shadow-[-0.33392625rem_-0.33392625rem_0.66785rem_0.166963125rem_#FFFFFF,0.33392625rem_0.33392625rem_0.66785rem_#BABFBF] flex justify-center items-center mt-[1rem] lg:mt-0'>
+                            <div className='lg:text-[1.25rem] text-[0.9rem] lg:w-[17.75rem] w-[95%] lg:leading-[2.09375rem] leading-[1.65rem] lg:my-[0.5rem] lg:my-0'>
                                 Don't miss out the opportunity to secure your place in this iconic Tower. Register now to be part of an exclusive circle of discerning individuals who recognize the true value of luxury living in the heart of Dubai.
                             </div>
                         </div>
@@ -70,7 +70,7 @@ const InquiryFormWiht = () => {
                             </div>
 
                         </div>
-                        <div className='flex gap-[0.54875rem] mt-[0.755rem]'>
+                        <div className='hidden lg:flex gap-[0.54875rem] mt-[0.755rem]'>
                             <RadioWhit/>
 
                             <div className='text-[#7D8989] text-[0.8225rem] w-[80%] lg:w-max'>
